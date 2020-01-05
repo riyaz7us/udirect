@@ -1,0 +1,109 @@
+@charset "UTF-8";
+/*
+Theme Name:     uDirect
+Theme URI:      https://spotverge.com/
+Author:         Spotverge
+Author URI:     https://spotverge.com
+Description:    uDirect is a super fast template designed for ApplyGlobe
+Version:        1.3
+License:        GNU General Public License v2 or later
+License URI:    http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain:    udirect
+*/
+
+.check {
+	font-size: 25px;padding:0px 30px 0px 30px;margin:auto;border:none;color:#00aff0;
+}
+hr{margin-top:4px;margin-bottom:4px;}
+.drop{border-radius:2px; width:200px;}
+label:hover{color:#00aff0;}
+.btn-white{background-color:#fff;color:#00aff0;font-weight: bold;border-radius:2px;}
+.shadow,.shadow-lg{box-shadow: 0px 0px 4px gray;}
+.dropdown{color:#fff;border:none;background:none;}
+.im{font-size:1.5em;}
+.il{font-size: 2em;}
+.dropdown:hover{cursor: pointer;}
+.inputs{max-height:250px;overflow-y:scroll;}
+#level,#loc,#disc{width:max-content;}
+
+/*loading ring*/
+.lds-dual-ring {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+}
+.lds-dual-ring:after {
+  content: " ";
+  display: block;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border-radius: 50%;
+  border: 6px solid #00aff0;
+  border-color: #00aff0 transparent #00aff0 transparent;
+  animation: lds-dual-ring 1.2s linear infinite;
+}
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+#formcanvas{background-color:#00aff0;}
+
+/*time to make some moves::Animations*/
+.dropdown:hover{
+	text-shadow:2px 2px #70869e;
+	transition-duration: 0.5s;
+}
+.btn-white:hover{
+	color:#fff;
+	border:2px solid #fff;
+	background-color: #00aff0;
+	transition-duration:0.5s;
+}
+.check:hover{color:#2098d1;transform:scale(1.2);}
+li{list-style-type: none}
+.g{color:#444;}
+.lay{position:relative;}
+.title{font-weight:bold; color:#2098d1;}
+.b{font-weight: bold;}
+.jumbotron{padding:0px; margin:0px;}
+.list-group-item{background-color:inherit; border-color:white; font-weight:bold;}
+
+/* ********** MODAL STYLER ************** */
+ /* Style the form */
+#regForm { background-color: #ffffff;}
+
+
+/* Mark input boxes that gets an error on validation: */
+input.invalid {background-color: #ffdddd;}
+
+/* Hide all steps by default: */
+.tab {display: none;}
+
+/* Make circles that indicate the steps of the form: */
+.step {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #00aff0;
+  border: none;
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.5;
+}
+
+/* Mark the active step: */
+.step.active {opacity:1;}
+
+/* Mark the steps that are finished and valid: */
+.step.finish {background-color: #4CAF50;} 
+
+.modal{
+  z-index: 9999;
+}
+
+#response{width:100%; min-height:500px;}
